@@ -1,6 +1,6 @@
 package array;
 
-public class ArrayRef1 {
+public class Array1Ref3 {
     public static void main(String[] args) {
         int[] students;
         students = new int[5];
