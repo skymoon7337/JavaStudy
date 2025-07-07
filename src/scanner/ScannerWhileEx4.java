@@ -41,7 +41,7 @@ public class ScannerWhileEx4 {
                 System.out.printf("총 비용: %.0f",sum);
                 System.out.println("");
                 sum=0;
-                break;
+
 
             }  else if (option ==3){
                 System.out.println("프로그램을 종료합니다.");
