@@ -21,8 +21,8 @@ public class ArrayEx9_2 {
                     System.out.println("더 이상 상품을 등록할 수 없습니다.");
                     break;
                 }
-                System.out.print("상품 이름을 입력하세요: ");
                 scanner.nextLine();
+                System.out.print("상품 이름을 입력하세요: ");
                 productNames[productCount] = scanner.nextLine();
 
                 System.out.print("상품 가격을 입력하세요: ");
