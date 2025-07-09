@@ -2,12 +2,15 @@ package array.ex;
 
 import java.util.Scanner;
 
-public class ArrayEx7_2 {
+public class ArrayEx8 {
     public static void main(String[] args) {
 
+        int k=0;
         Scanner sc = new Scanner(System.in);
+        System.out.println("학생수를 입력하시오 :");
+        k=sc.nextInt();
 
-        int arr[][] = new int[4][3];
+        int arr[][] = new int[k][3];
         String arr2[]={"국어 점수: ","영어 점수 : ","수학 점수 : "};
 
         int score;
@@ -29,7 +32,7 @@ public class ArrayEx7_2 {
             for (int j = 0; j < arr[i].length; j++) {
                 sum += arr[i][j];
                 }
-            avr=(double)sum/3;
+            avr=sum/3.0;
             System.out.printf("%d번 학생의 총점 : %d, 평균 : %.2f\n", i+1, sum, avr);
             }
 
