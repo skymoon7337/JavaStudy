@@ -8,7 +8,7 @@ public class PayService {
 
         PayInterface pay = PaySelect.findPay(option);
         boolean result = pay.pay(amount);
-        //이제 옵션을 PaySelect에 넣고 amount는 일단 그냥 여기서 하자
+
 
         if (result) {
             System.out.println("결제가 성공했습니다.");
