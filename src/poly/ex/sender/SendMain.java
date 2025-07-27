@@ -1,4 +1,4 @@
-package poly.ex;
+package poly.ex.sender;
 
 public class SendMain {
     public static void main(String[] args) {
@@ -7,6 +7,7 @@ public class SendMain {
         for (Sender sender : senders) {
             sender.sendMessage("환영합니다!");
         }
+
     }
 }
 
