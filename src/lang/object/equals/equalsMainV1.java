@@ -8,5 +8,6 @@ public class equalsMainV1 {
 
         System.out.println("identity = " +(user1==user2));
         System.out.println("equality = " +(user1.equals(user2)));
+
     }
 }
