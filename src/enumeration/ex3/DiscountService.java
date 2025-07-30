@@ -5,6 +5,7 @@ public class DiscountService {
     public int discount(Grade grade, int price) {
         int discountPercent = 0;
 
+        //Alt enter : static import 하면 간단해짐
         if (grade == Grade.BASIC) {
             discountPercent = 10;
         } else if (grade == Grade.GOLD) {
