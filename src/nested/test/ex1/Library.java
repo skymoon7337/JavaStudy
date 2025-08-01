@@ -4,23 +4,24 @@ public class Library {
     private Book[] books;
     private int bookcount;
 
-    public Library(int size) {
+
+    public Library(int size){
         books = new Book[size];
-        bookcount = 0;
+        bookcount=0;
     }
 
-    public void addBook(String title, String author) {
-    if(bookcount<books.length){
-        books[bookcount++]=new Book(title,author);
-    }else{
-        System.out.println("공간이 부족합니다.");
-    }
+    public void addBook(String title, String author){
+
+        if(bookcount<books.length) {
+            books[bookcount++] = new Book(title, author);
+        }else{
+            System.out.println("공간이 부족합니다.");
+        }
     }
 
-    public void showBooks() {
-        System.out.println("==책 목록 출력==");
-        for (int i = 0; i < books.length; i++) {
-            System.out.println("제목: "+books[i].title+" 작가: "+books[i].author);
+    public void showBooks(){
+        for (int i = 0; i < bookcount; i++) {
+            System.out.println("도서 제목: "+books[i].title+ ", 저자: "+books[i].author);
         }
     }
 
@@ -33,9 +34,5 @@ public class Library {
             this.author = author;
         }
 
-
     }
-
 }
-
-
