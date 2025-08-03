@@ -1,6 +1,6 @@
 package generic.ex1;
 
-public class InterBox {
+public class IntegerBox {
 
     private Integer value;
 
