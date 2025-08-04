@@ -15,7 +15,10 @@ public class WildcardMain2 {
 
         writeBox(objectBox);
         writeBox(animalBox);
-        w
+        //writeBox(dogBox);  // 하한이 Animal
+        
+        Animal animal = animalBox.get();
+        System.out.println("animal = " + animal);
     }
 
     static void writeBox(Box<? super Animal> box) {
