@@ -1,0 +1,40 @@
+package collection.iterable;
+
+import java.util.*;
+
+public class JavaIterableMain_1 {
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(2);
+        set.add(3);
+
+        printAll(list.iterator());
+        printAll(set.iterator());
+        foreach(list);
+        foreach(set);
+    }
+
+    //Iterator 상속시-> hasNext, next구현
+    private static void printAll(Iterator<Integer> iterator) {
+        System.out.println("iterator = " + iterator.getClass());
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+
+    //Iterable 상속시 Iterator 구현
+    private static void foreach(Iterable<Integer> iterable) {
+        System.out.println("iterable.getClass() = " + iterable.getClass());
+        for (Integer i : iterable) {
+            System.out.println(i);
+
+        }
+    }
+
+}

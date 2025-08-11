@@ -7,8 +7,8 @@ public class Cart {
     private Map<Product, Integer> cartMap = new HashMap<>();
 
     public void add(Product product, int addQuantity) {
-        int defaultQuantity = cartMap.getOrDefault(product,0);
-        cartMap.put(product,defaultQuantity+addQuantity);
+        int existQuantity = cartMap.getOrDefault(product,0);
+        cartMap.put(product,existQuantity+addQuantity);
     }
 
     public void printAll() {
@@ -19,11 +19,11 @@ public class Cart {
     }
 
     public void minus(Product product, int minusQuantity) {
-        int defaultQuantity = cartMap.getOrDefault(product, 0);
-        if (defaultQuantity-minusQuantity<=0){
+        int existQuantity = cartMap.getOrDefault(product, 0);
+        if (existQuantity-minusQuantity<=0){
             cartMap.remove(product);
         } else{
-            cartMap.put(product,defaultQuantity-minusQuantity);
+            cartMap.put(product,existQuantity-minusQuantity);
         }
 
     }
